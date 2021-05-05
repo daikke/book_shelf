@@ -30,6 +30,6 @@ jobs:
       run: php artisan migrate --seed
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
-        DB_CONNECTION: sqlite
-        DB_DATABASE: database/database.sqlite
+        DB_CONNECTION: mysql
+        DB_DATABASE: book_shelf
       run: vendor/bin/phpunit
