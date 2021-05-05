@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/book/create', function () {
-    return view('book.create');
-});
+Route::get('/book/create', 'BookController@create');
